@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Modal Task</title>
+</head>
+
+<body>
+
+    <ul class="flex-buttons">
+        <li><button class="btn modal-get-button" onclick=getModal()>Get Modal</button></li>
+        <li><button class="btn image-get-button" onclick="getImgModal()">View a random Image</button></li>
+    </ul>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-header">
+            <h2>Modal Header</h2>
+        </div>
+        <hr>
+        <div class="modal-content">
+            <p>This is the Modal..</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure corrupti porro exercitationem voluptate
+                reiciendis qui architecto, nobis quaerat quis magnam consequatur provident libero maxime alias natus
+                eveniet. Ad, voluptas ut.</p>
+
+            <h3>Are you really Want to Delete particular record..?? </h3>
+            <div class="footer-btns">
+                <!-- Delete Button May Have extra bound Functionality -->
+                <button class="btn delete-btn" onclick="hideModal()">Delete</button>
+                <button class="btn cancel-btn" onclick="hideModal()">cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="img-modal" class="img-modal">
+        <div class="modal-header">
+            
+
+        </div>
+       
+        <div class="modal-image">
+           <img src=" https://source.unsplash.com/random" alt="Random Image">
+        </div>
+
+    </div>
+    <script src="./modal.js"></script>
+</body>
+
+</html>
